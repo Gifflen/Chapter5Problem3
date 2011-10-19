@@ -2,8 +2,6 @@
 // Complete documentation is available from the LinkedBag link in:
 //   http://www.cs.colorado.edu/~main/docs/
 
-import edu.colorado.nodes.Node;
-import edu.colorado.nodes.Lister;
 
 /******************************************************************************
 * An LinkedBag<E> is a collection of references to E objects.

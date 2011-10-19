@@ -1,7 +1,6 @@
 // File: Node.java from the package edu.colorado.nodes
 // Complete documentation is available from the Node link in:
 //   http://www.cs.colorado.edu/~main/docs
-
 /******************************************************************************
 * A Node<E> provides a generic node for a linked list. Each node 
 * contains a piece of data (which is a reference to an E object) and a link

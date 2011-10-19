@@ -1,10 +1,8 @@
 // File: Lister.java from the package edu.colorado.nodes
 // Complete documentation is available from the Lister link in:
 //   http://www.cs.colorado.edu/~main/docs/
-
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-import edu.colorado.nodes.Node; 
 
 /******************************************************************************
 * A <CODE>Lister</CODE> implements Java's <CODE>Iterator&lt;E&gt;</CODE>
@@ -38,7 +36,6 @@ public class Lister<E> implements Iterator<E>
 
    /**
    * Initialize a Lister with a specified linked list.
-   * @param <CODE>head</CODE>
    *   a head reference for a linked list of objects
    * <dt><b>Postcondition:</b><dd>
    *   Subsequent activations of <CODE>next</CODE> will return the elements 
