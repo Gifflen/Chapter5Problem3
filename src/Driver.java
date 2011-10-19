@@ -10,17 +10,17 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import LinkedBag;
+
 
 public class Driver {
 
-private static LinkedBag get_Input(int count, String type){
-    LinkedBag lb = new LinkedBag();
+private static LinkedBag<String> get_Input(int count, String type){
+    LinkedBag<String> lb = new LinkedBag<String>();
     String inpString;
-   InputStreamReader inp = new InputStreamReader(System.in);
+    InputStreamReader inp = new InputStreamReader(System.in);
     BufferedReader in = new BufferedReader(inp);
     while (lb.size()<count){
-        System.out.println("Input at least " + count + " "+type+"s delimited by spaces");
+        System.out.println("Input at least " + (count-lb.size()) + " "+type+" delimited by spaces");
 
         try {
             inpString = in.readLine();
@@ -40,8 +40,8 @@ private static LinkedBag get_Input(int count, String type){
 public static void main(String[] args){
     int nounCount = 10;
     int verbCount = 10;
-    LinkedBag lbNouns = get_Input(nounCount,"Noun");
-    LinkedBag lbVerbs = get_Input(verbCount,"Verb");
+    LinkedBag<String> lbNouns = get_Input(nounCount, "Noun");
+    LinkedBag<String> lbVerbs = get_Input(verbCount, "Verb");
 
     for (int i =0; i<10;i++){
         System.out.println("The " + lbNouns.grab() + " " + lbVerbs.grab() +"s the " + lbNouns.grab() );
