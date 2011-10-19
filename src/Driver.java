@@ -17,8 +17,7 @@ public class Driver {
 private static LinkedBag<String> get_Input(int count, String type){
     LinkedBag<String> lb = new LinkedBag<String>();
     String inpString;
-    InputStreamReader inp = new InputStreamReader(System.in);
-    BufferedReader in = new BufferedReader(inp);
+    BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
     while (lb.size()<count){
         System.out.println("Input at least " + (count-lb.size()) + " "+type+" delimited by spaces");
 
